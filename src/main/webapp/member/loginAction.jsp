@@ -3,6 +3,7 @@
 <%@ page import="java.net.*" %>
 <%@ page import="vo.*" %>
 <%
+	request.setCharacterEncoding("utf-8");
 	//세션 유효성 검사 - 로그인이 되어있는 상태면 home으로
 	if(session.getAttribute("loginMemberId") != null){
 		response.sendRedirect(request.getContextPath() + "/home.jsp");
@@ -37,7 +38,7 @@
 	
 	//DB연결
 	String driver = "org.mariadb.jdbc.Driver";
-	String dburl = "jdbc:mariadb://127.0.0.1:3306/userboard";
+	String dburl = "jdbc:mariadb://52.79.53.122:3306/userboard";
 	String dbuser = "root";
 	String dbpw = "java1234";
 	Class.forName(driver);

@@ -2,6 +2,7 @@
 <%@ page import="java.sql.*" %>
 <%@ page import="java.net.*" %>
 <%
+	request.setCharacterEncoding("utf-8");
 	//에러메시지 담을 때 사용할 변수
 	String errMsg = null;
 
@@ -21,7 +22,7 @@
 	
 	//DB연결에 사용할 변수 셋팅
 	String driver = "org.mariadb.jdbc.Driver";
-	String dburl = "jdbc:mariadb://127.0.0.1:3306/userboard";
+	String dburl = "jdbc:mariadb://52.79.53.122:3306/userboard";
 	String dbuser = "root";
 	String dbpw = "java1234";
 	

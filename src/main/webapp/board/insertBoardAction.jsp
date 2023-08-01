@@ -2,6 +2,7 @@
 <%@ page import="java.sql.*" %>
 <%@ page import="java.net.*" %>
 <%
+	request.setCharacterEncoding("utf-8");
 	//요청값 유효성 검사
 	String msg = null;
 	if(request.getParameter("localName") == null
@@ -38,7 +39,7 @@
 	
 	//DB연결을 위한 변수저장
 	String driver = "org.mariadb.jdbc.Driver";
-	String dburl = "jdbc:mariadb://127.0.0.1:3306/userboard";
+	String dburl = "jdbc:mariadb://52.79.53.122:3306/userboard";
 	String dbuser = "root";
 	String dbpw = "java1234";
 	

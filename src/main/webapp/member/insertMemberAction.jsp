@@ -3,6 +3,7 @@
 <%@ page import="java.net.*" %>
 <%@ page import="vo.*" %>
 <%
+	request.setCharacterEncoding("utf-8");
 	//요청값 유효성 검사
 	String errMsg = null;
 	if(request.getParameter("memberId") == null
@@ -38,7 +39,7 @@
 	
 	//DB연결
 	String driver = "org.mariadb.jdbc.Driver";
-	String dburl = "jdbc:mariadb://127.0.0.1:3306/userboard";
+	String dburl = "jdbc:mariadb://52.79.53.122:3306/userboard";
 	String dbuser = "root";
 	String dbpw = "java1234";
 	Class.forName(driver);
