@@ -14,6 +14,18 @@ ul{
 	width: 1280px;
 	margin: 0 auto;
 }
+.main-logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+.main-logo h1{
+	display: inline;
+}
+.main-logo img{
+	width: 50px;
+}
 .main_container{
 	display:flex;
 	justify-content:center;
@@ -300,6 +312,7 @@ ul{
 .pagination .page{
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 .pagination .page a{
 	display: grid;

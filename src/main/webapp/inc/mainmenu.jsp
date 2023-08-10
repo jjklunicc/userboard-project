@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <div>
+	<div class="main-logo">
+		<img src="<%=request.getContextPath()%>/lock.png">
+		<h1>방탈출 후기 게시판</h1>
+	</div>
 	<ul class="main_container">
 		<li class="main_menu"><a href="<%=request.getContextPath()%>/home.jsp">홈으로</a></li>
 	
