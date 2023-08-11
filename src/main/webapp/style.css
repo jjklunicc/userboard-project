@@ -102,6 +102,9 @@ ul{
 .board_content th{
 	background-color: lightyellow;
 }
+.board_content table td:nth-child(3):hover{
+	background-color: gainsboro;
+}
 .copyright{
 	margin : 20px auto;
 }
